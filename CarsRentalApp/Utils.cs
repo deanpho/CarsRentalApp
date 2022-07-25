@@ -13,6 +13,7 @@ namespace CarsRentalApp
         // allows one instance (window) only
         public static bool FormIsOpen(string name)
         {
+
             // Check is widnow is already open
             var OpenForms = Application.OpenForms.Cast<Form>();
             var isOpen = OpenForms.Any(q => q.Name == name);
